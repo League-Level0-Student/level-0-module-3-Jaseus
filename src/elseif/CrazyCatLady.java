@@ -5,10 +5,21 @@ package elseif;
 
 import java.net.URI;
 
+import javax.swing.JOptionPane;
+
 public class CrazyCatLady {
 	public static void main(String[] args) {
 		// 1. Ask the user how many cats they have
-
+		String numCats = JOptionPane.showInputDialog("How many cats do you have?");
+		int cats = Integer.parseInt(numCats);
+			if(cats >= 3) {
+				JOptionPane.showMessageDialog(null, "Wow, you're a crazy cat lady XD");
+			}else if(cats < 3)if(cats > 0) {
+				playVideo("https://www.youtube.com/watch?v=zcGOoDThC1E");
+			}else if(cats == 0) {
+				playVideo("https://www.youtube.com/watch?v=oa6fCXcYjgE");
+			}
+	
 		// 2. Convert their answer into an int
 
 		// 3. If they have 3 or more cats, tell them they are a crazy cat lady
